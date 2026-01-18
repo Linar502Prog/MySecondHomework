@@ -1,11 +1,14 @@
 #include <iostream>
 #include <string>
+#include <Windows.h>
+
 int main() {
-	std::string word;
-	std::cout << "Enter word: "<<std::endl;
-	std::cin >> word;
-	std::cout << "Your word: " << word << std::endl;
+  SetConsoleOutputCP(1251);
+  SetConsoleCP(1251);
+  std::string word;
+  std::cout << "Введите слово: ";
+  std::cin >> word;
+  std::cout << "Вы ввели: " << word << std::endl;
 
-	return EXIT_SUCCESS;
-
+  return EXIT_SUCCESS;
 }
