@@ -1,10 +1,11 @@
 #include <iostream>
 #include <string>
 int main() {
-	std::string string;
-	std::cout << "Enter word: ";
-	std::cin >> string;//т.к вводит одно слово используем метод std::cin;
-	std::cout << "Your word: " << string << std::endl;
+	std::string word;
+	std::cout << "Enter word: "<<std::endl;
+	std::cin >> word;
+	std::cout << "Your word: " << word << std::endl;
 
 	return EXIT_SUCCESS;
+
 }
